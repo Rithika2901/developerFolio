@@ -20,26 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Rithika Kothapalli",
+  title: "Hi, I'm Rithika 👋",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "I'm a passionate Machine Learning Engineer with a love for building smart systems that solve real-world problems. With hands-on experience in NLP, Deep Learning, and Data Visualization, I turn raw data into actionable insights. Let’s turn ideas into intelligent solutions 🚀"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1qFuEL-wvGVzvphm3jB5mVcWkazXjIEgNFD5bZDRFHxM/edit?tab=t.0", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/Rithika2901",
+  linkedin: "https://www.linkedin.com/in/rithika-kothapalli-491a42263/",
+  gmail: "rithikak@bu.edu"
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,15 +45,16 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DATA SCIENTIST WHO LOVES TURNING DATA INTO MEANINGFUL INSIGHTS & SMART MODELS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "🔍 Analyze large datasets to uncover patterns, trends, and actionable insights using Python, SQL, and Pandas"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("🤖 Build, train, and evaluate ML/DL models for prediction, classification, and NLP tasks using Scikit-learn, PyTorch, and TensorFlow"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "📊 Create dynamic visualizations and dashboards using Power BI, Tableau, and Streamlit to make data accessible for everyone"
+    ),
+    emoji("🚀 Deploy models with FastAPI, Docker, and CI/CD pipelines on AWS, GCP, and Databricks"),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,51 +62,51 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "SQL",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
+      skillName: "SAS",
       fontAwesomeClassname: "fab fa-sass"
     },
     {
-      skillName: "JavaScript",
+      skillName: "R programming",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "Machine Learning",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "Deep Learning",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
+      skillName: "Big Data Analytics",
       fontAwesomeClassname: "fab fa-swift"
     },
     {
-      skillName: "npm",
+      skillName: "EDA",
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
+      skillName: "Visualization",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
+      skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
+      skillName: "GCP",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
+      skillName: "LLM",
       fontAwesomeClassname: "fab fa-python"
     },
     {
@@ -126,10 +123,10 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
+      schoolName: "Boston University",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      subHeader: "Master of Science in Applied Data Analytics",
+      duration: "September 2023 - January 2025",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",

@@ -106,11 +106,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "LLM",
+      skillName: "LLM's",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
@@ -124,21 +124,17 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Boston University",
-      logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Master of Science in Applied Data Analytics",
       duration: "September 2023 - January 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    { 
+      schoolName: "VNE Vignana Jyothi Institute of Engineering and Technology",
+      subHeader: "Bachelor of Technology in Electronics and Instrumentation Engineering",
+      duration: "August 2019 - May 2023",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
@@ -150,17 +146,33 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Data Analysis & EDA", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Machine Learning",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
+      Stack: "Deep Learning",
       progressPercentage: "60%"
-    }
+    },
+    {
+      stack: "Python & Libraries (NumPy, Pandas, Scikit-learn)",
+      progressPercentage: "90%"
+    },
+    {
+      stack: "SQL Databases",
+      progressPercentage: "90%"
+    },
+    { 
+      stack: "Data Visualization (Power BI / Tableau / Streamlit)",
+      progressPercentage: "80%"
+    },
+    { 
+      stack: "Model Deployment (FastAPI, Docker, CI/CD)",
+      progressPercentage: "80%"
+    },
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -168,35 +180,33 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Data Scientist",
+      company: "Cron Infotech LLC",
+      date: "Sep 2023 – Present",
+      desc: "Built scalable ML pipelines and deployed fraud detection and forecasting models with Gen AI and Deep Learning.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed pipelines using AWS Glue, Lambda, FastAPI, Docker, and Spark",
+        "Deployed models via SageMaker with CloudWatch for automation and ETL tracking",
+        "Implemented SARIMA, LSTM, and GPT-based models for business forecasting"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Scientist",
+      company: "CSI Interfusion",
+      date: "May 2022 – Nov 2022",
+      desc: "Worked on customer segmentation, time series modeling, and dashboarding for marketing insights.",
+      descBullets: [
+        "Applied clustering and forecasting models on large-scale marketing datasets",
+        "Built dashboards using SQL, Python, Power BI, and Tableau",
+        "Supported data pipeline development using Databricks and Kubernetes"
+      ]
     }
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -213,28 +223,49 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+  image: require("./assets/images/loanIcon.png"), // Save any icon/image you like for this project here
+  projectName: "Loan Approval Predictor",
+  projectDesc:
+    "A Streamlit app that predicts loan approvals based on user inputs using a trained ML classification model.",
+  footerLink: [
+   {
+      name: "View Live App",
+      url: "https://loan-approval-predictor-okheouk2g7grvcgtqegtck.streamlit.app/"
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      name: "GitHub Repo",
+      url: "https://github.com/Rithika2901/loan-approval-predictor" // Replace with your actual repo link
     }
+  ]
+},
+  {
+  image: require("./assets/images/customerSegmentation.png"), // Add a screenshot or icon to assets/images
+  projectName: "Mall Customer Segmentation Dashboard",
+  projectDesc:
+    "An interactive Tableau dashboard that visualizes customer clusters based on income, spending score, and demographic distribution using K-means clustering.",
+  footerLink: [
+    {
+      name: "View Dashboard",
+      url: "https://public.tableau.com/app/profile/rithika.kothapalli2780/viz/MallCustomerSegmentationInteractiveDashboard/Dashboard1?publish=yes"
+    }
+  ]
+},
+    {
+  image: require("./assets/images/sentimentIcon.png"), // Replace with actual file if you have one
+  projectName: "Product Review Sentiment Analyzer (VADER)",
+  projectDesc:
+    "An NLP-based Streamlit app using the VADER model to analyze product review sentiment in real time.",
+  footerLink: [
+    {
+      name: "View Live App",
+      url: "https://your-streamlit-link.com" // Replace with the actual Streamlit link
+    },
+    {
+      name: "GitHub Repo",
+      url: "https://github.com/Rithika2901/sentiment-analyzer-vader" // Replace with your repo link
+    }
+  ]
+}
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -297,64 +328,9 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
 
 // Resume Section
 const resumeSection = {
@@ -369,8 +345,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+1 8574981711",
+  email_address: "rithikak@bu.edu"
 };
 
 // Twitter Section
